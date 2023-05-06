@@ -38,6 +38,7 @@ const GamingSection: NextPage = () => {
 
         {/* Icons */}
         <div className="absolute left-0 top-0 h-full w-full">
+          {/* Smiley Bubble Icon */}
           <Image
             src="/images/gaming/smileybubble.png"
             width={87}
