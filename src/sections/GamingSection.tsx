@@ -45,6 +45,83 @@ const GamingSection: NextPage = () => {
             className="absolute left-[8%] top-40"
             alt=""
           />
+          <Image
+            src={"/images/gaming/arrow1.png"}
+            width={87}
+            height={114}
+            className="absolute right-[21%] top-[326px]"
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/arrow2.png"}
+            width={82}
+            height={66}
+            className="absolute right-[44%] top-52 -rotate-180"
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/arrow3.png"}
+            width={87}
+            height={114}
+            className="absolute right-[4%] top-36 "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/wifi.png"}
+            width={48}
+            height={52}
+            className="absolute left-[30%] top-40 "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/wifi.png"}
+            width={48}
+            height={52}
+            className="absolute bottom-[251px] left-[23.5%] "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/arrow5.png"}
+            width={81}
+            height={82}
+            className="absolute left-[1.5%] top-[380px] "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/pointer.png"}
+            width={85}
+            height={77}
+            className="absolute right-[27%] top-[150px] "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/textbubble.png"}
+            width={76}
+            height={82}
+            className="absolute bottom-[375px] left-[4%] "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/arrow4.png"}
+            width={43}
+            height={69}
+            className="absolute bottom-[215px] left-[13%] "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/heartbubble.png"}
+            width={83}
+            height={86}
+            className="absolute bottom-[197px] right-[24%] "
+            alt=""
+          />
+          <Image
+            src={"/images/gaming/refresh.png"}
+            width={46}
+            height={56}
+            className="absolute bottom-[200px] right-[11%] "
+            alt=""
+          />
         </div>
 
         {/* Bottom Border */}
