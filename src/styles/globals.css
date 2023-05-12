@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#pad {
+  fill: #ff4a37 !important;
+}
+
+.wall {
+  fill: blueviolet !important;
+}

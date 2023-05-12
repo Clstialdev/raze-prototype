@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./game.css" />
+    <title>Brick Breaker</title>
+  </head>
+
+  <body>
+    <svg id="svgRoot" height="100%" width="100%">
+      <circle cx="180" cy="25" r="10" id="ball" fill="white" />
+      <rect
+        id="pad"
+        height="15px"
+        width="150px"
+        fill="green"
+        x="100"
+        y="0"
+        rx="4"
+        ry="4"
+      />
+      <text
+        id="levelText"
+        x="100"
+        fill="white"
+        font-size="24"
+        transform="scale(1,-1)"
+      >
+        Level 1
+      </text>
+    </svg>
+  </body>
+
+  <script src="./game.js"></script>
+</html>
