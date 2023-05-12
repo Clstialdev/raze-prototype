@@ -9,3 +9,53 @@
 .wall {
   fill: blueviolet !important;
 }
+/*  */
+@font-face {
+  font-family: PP;
+  src: url(../../public/fonts/PPMondwest-Regular.otf);
+}
+@font-face {
+  font-family: PPbold;
+  src: url(../../public/fonts/PPNeueBit-Bold.otf);
+}
+@font-face {
+  font-family: DueraMed;
+  src: url(../../public/fonts/Duera-NormMedi-PERSONAL.ttf);
+}
+@font-face {
+  font-family: headingPro;
+  src: url(../../public/fonts/Heading-Pro-ExtraBold-trial.ttf);
+}
+.pp {
+  font-family: PP;
+}
+.ppBold {
+  font-family: PPbold;
+}
+.inter {
+  font-family: "Inter";
+  letter-spacing: -0.35px;
+}
+.Cormorant {
+  font-family: "Cormorant", serif;
+}
+
+.barcode {
+  font-family: "Libre Barcode 39", cursive;
+  font-weight: 400;
+  color: white;
+}
+.duera {
+  font-family: DueraMed;
+}
+.headingPro {
+  font-family: headingPro;
+  letter-spacing: -0.06em;
+}
+.textShadow {
+  color: #000000;
+
+  text-shadow: 2px 2px 0 #c2c2c2, 2px -2px 0 #c2c2c2, -2px 2px 0 #c2c2c2,
+    -2px -2px 0 #c2c2c2, 2px 0px 0 #c2c2c2, 0px 2px 0 #c2c2c2,
+    -2px 0px 0 #c2c2c2, 0px -2px 0 #c2c2c2;
+}
