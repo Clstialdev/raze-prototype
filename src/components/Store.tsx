@@ -14,7 +14,7 @@ const Store = () => {
         <div className="">
           <p className="inter mt-12 text-xs uppercase text-white opacity-30">
             More coming soon.... Subscribe to our{" "}
-            <span className=" text-[#96FC58]"> Newsletter</span> to get notified
+            <span className=" text-[#96FC58] underline"> Newsletter</span> to get notified
             of limited edition drops!
           </p>
         </div>
