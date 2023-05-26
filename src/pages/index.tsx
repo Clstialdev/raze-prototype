@@ -1,3 +1,6 @@
+import Newsletter from "@/components/Newsletter";
+import EnglishSection from "@/sections/EnglishSection";
+import EventsSection from "@/sections/EventsSection";
 import GamingSection from "@/sections/GamingSection";
 import HeroSection from "@/sections/HeroSection";
 import { type NextPage } from "next";
@@ -14,6 +17,9 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-black">
         <HeroSection />
+        <EventsSection />
+        <EnglishSection />
+        <Newsletter />
         {/* <GamingSection /> */}
       </main>
     </>

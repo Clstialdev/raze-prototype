@@ -26,6 +26,18 @@
   font-family: headingPro;
   src: url(../../public/fonts/Heading-Pro-ExtraBold-trial.ttf);
 }
+@font-face {
+  font-family: Inter;
+  src: url(../../public/fonts/Inter.ttf);
+}
+@font-face {
+  font-family: Cormorant;
+  src: url(../../public/fonts/Cormorant.ttf);
+}
+@font-face {
+  font-family: "Libre Barcode 39";
+  src: url(../../public/fonts/Libre.ttf);
+}
 .pp {
   font-family: PP;
 }
@@ -58,4 +70,25 @@
   text-shadow: 2px 2px 0 #c2c2c2, 2px -2px 0 #c2c2c2, -2px 2px 0 #c2c2c2,
     -2px -2px 0 #c2c2c2, 2px 0px 0 #c2c2c2, 0px 2px 0 #c2c2c2,
     -2px 0px 0 #c2c2c2, 0px -2px 0 #c2c2c2;
+}
+
+.dashed-line {
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 8px,
+    #fff 8px,
+    #fff 18px
+  );
+}
+
+.text-stroke-english {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.14);
+}
+
+@media (min-width: 1280px) {
+  .text-stroke-english {
+    -webkit-text-stroke-width: 3px;
+  }
 }
