@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import Image from "next/image";
 import HeroTitle from "@/components/HeroTitle";
 import Header from "@/components/Header";

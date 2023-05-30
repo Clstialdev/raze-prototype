@@ -1,11 +1,10 @@
 import Newsletter from "@/components/Newsletter";
 import EnglishSection from "@/sections/EnglishSection";
 import EventsSection from "@/sections/EventsSection";
-import GamingSection from "@/sections/GamingSection";
+// import GamingSection from "@/sections/GamingSection";
 import HeroSection from "@/sections/HeroSection";
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 
 const Home: NextPage = () => {
   return (

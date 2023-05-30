@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import Image from "next/image";
 
 const EnglishSection: NextPage = () => {
@@ -56,24 +56,26 @@ const EnglishSection: NextPage = () => {
         </div>
         {/* Description */}
         <p className="inter w-full text-justify text-xs font-medium uppercase text-white sm:text-sm">
-          We're thrilled to have you as part of our community, where the{" "}
+          We&apos;re thrilled to have you as part of our community, where the{" "}
           <span className="text-raze-red">language</span> is our common bond and
-          the fun never stops. Whether you're a grammar guru, a vocab virtuoso,
-          or just a lover of all things{" "}
-          <span className="text-raze-red">English</span>, we've got something
-          for you. Our sub-communities cater to all interests, from the hardcore{" "}
-          <span className="text-raze-red">gamers</span> who dominate the
-          leaderboards, to the <span className="text-raze-red">bookworms</span>{" "}
-          who devour literature faster than a speeding bullet. From{" "}
+          the fun never stops. Whether you&apos;re a grammar guru, a vocab
+          virtuoso, or just a lover of all things{" "}
+          <span className="text-raze-red">English</span>, we&apos;ve got
+          something for you. Our sub-communities cater to all interests, from
+          the hardcore <span className="text-raze-red">gamers</span> who
+          dominate the leaderboards, to the{" "}
+          <span className="text-raze-red">bookworms</span> who devour literature
+          faster than a speeding bullet. From{" "}
           <span className="text-raze-red">literary</span> luncheons to{" "}
           <span className="text-raze-red">movie</span> marathons,{" "}
           <span className="text-raze-red">gaming</span> tournaments to{" "}
-          <span className="text-raze-red">women's</span> empowerment workshops,
-          we're always finding new ways to showcase our passions and connect
-          with each other. So grab a cuppa, kick back, and{" "}
+          <span className="text-raze-red">women&apos;s</span> empowerment
+          workshops, we&apos;re always finding new ways to showcase our passions
+          and connect with each other. So grab a cuppa, kick back, and{" "}
           <span className="text-raze-red">join us</span> on this wild and wacky
-          ride. Together, we'll create a{" "}
-          <span className="text-raze-red">community</span> that's chock-full of{" "}
+          ride. Together, we&apos;ll create a{" "}
+          <span className="text-raze-red">community</span> that&apos;s
+          chock-full of{" "}
           <span className="text-raze-red">good times, great memories</span>, and
           of course, plenty of <span className="text-raze-red">puns</span> along
           the way!

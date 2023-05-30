@@ -1,5 +1,5 @@
 import EventCard from "@/components/EventCard";
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import Image from "next/image";
 
 const Events: Array<EventCard> = [
