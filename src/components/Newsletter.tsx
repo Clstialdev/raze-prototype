@@ -19,7 +19,7 @@ const Newsletter = () => {
             <div className="h-40">
               <Image
                 className="flex flex-col items-center justify-center "
-                src={"/images/logoB.png"}
+                src={"/images/LogoB.png"}
                 width={301}
                 height={86}
                 alt=""

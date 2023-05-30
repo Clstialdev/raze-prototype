@@ -35,7 +35,7 @@ const EventsSection: NextPage = () => {
       {/* Background */}
       <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full">
         <Image
-          src="/images/EventSectionBG.png"
+          src="/images/EventSectionBg.png"
           width={2880}
           height={2048}
           alt="event section background"

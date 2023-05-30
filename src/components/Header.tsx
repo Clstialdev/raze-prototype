@@ -17,7 +17,7 @@ const Header = () => {
           </ul>
           {/* Raze Logo */}
           <div className="flex w-full items-center justify-start drop-shadow-[0_4px_16px_rgba(0,0,0,1)] lg:justify-center">
-            <Image width={90} height={26} src="/images/logo.png" alt="" />
+            <Image width={90} height={26} src="/images/Logo.png" alt="" />
           </div>
           {/* Hamburger Menu */}
           <div className="block lg:hidden"></div>
