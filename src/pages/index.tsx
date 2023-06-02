@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <EventsSection />
         <EnglishSection />
         <Newsletter />
-        {/* <GamingSection /> */}
+        <GamingSection />
       </main>
     </>
   );

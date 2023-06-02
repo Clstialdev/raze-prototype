@@ -31,7 +31,7 @@ const Events: Array<EventCard> = [
 
 const EventsSection: NextPage = () => {
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-around bg-[#121211]">
+    <div className="relative flex h-fit w-full flex-col items-center justify-around bg-[#121211] py-[5%] xl:h-screen xl:py-0">
       {/* Background */}
       <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full">
         <Image
@@ -43,18 +43,18 @@ const EventsSection: NextPage = () => {
         />
       </div>
       <div>
-        <h1 className="inter text-5xl font-extrabold uppercase text-white">
+        <h1 className="inter mb-8 text-5xl font-extrabold uppercase text-white">
           Events
         </h1>
       </div>
-      <div className="grid grid-cols-3 gap-[35px]">
+      <div className="grid grid-cols-1 gap-[35px] xl:grid-cols-3">
         <EventCard ticket={Events[0] as EventCard} />
         <EventCard ticket={Events[1] as EventCard} />
         <h1 className="inter my-auto text-center text-3xl font-bold uppercase text-white">
           MORE COMING SOON
         </h1>
       </div>
-      <div className="inter text-xs font-bold uppercase text-white text-opacity-[35%]">
+      <div className="inter mb-10 mt-4 text-center text-xs font-bold uppercase text-white text-opacity-[35%] xl:mb-0 xl:mt-0">
         dates, rates and tickets may change, Subscribe to our{" "}
         <span className="text-[#FC5858] text-opacity-[35%]">Newsletter</span> to
         stay updated!
