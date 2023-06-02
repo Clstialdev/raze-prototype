@@ -48,8 +48,9 @@ const EventsSection: NextPage = () => {
         </h1>
       </div>
       <div className="grid grid-cols-3 gap-[35px]">
-        <EventCard ticket={Events[0] as EventCard} />
-        <EventCard ticket={Events[1] as EventCard} />
+        {Events.map((event: EventCard, i: number) => (
+          <EventCard key={i} ticket={event} />
+        ))}
         <h1 className="inter my-auto text-center text-3xl font-bold uppercase text-white">
           MORE COMING SOON
         </h1>
