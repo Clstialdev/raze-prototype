@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.2.1",
+    "clsx": "^1.2.1",
     "framer-motion": "^10.12.16",
     "next": "^13.2.4",
     "next-auth": "^4.21.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tailwind-merge": "^1.13.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {

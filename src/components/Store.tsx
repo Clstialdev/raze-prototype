@@ -1,95 +1,81 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Sticker from "./Sticker";
 const Store = () => {
   return (
     <>
       {/* STICKERS  */}
       <div className="relative inset-0 w-full">
-        <motion.div
-          drag
+        <Sticker
+          src={"/images/stickers/StickerGreen.png"}
+          className="right-[710px] top-[60px]"
+          height={118}
+          width={188}
+          drag={true}
           dragConstraints={{
             top: -50,
             left: 300,
             right: 300,
             bottom: 50,
           }}
-          className="absolute right-[710px] top-[60px]"
-        >
-          <Image
-            src={"/images/stickers/StickerGreen.png"}
-            width={118}
-            height={118}
-            alt="green sticker"
-          />
-        </motion.div>
-        <motion.div
-          drag
+          alt="sticker green"
+        />
+        <Sticker
+          className="left-[410px] top-[190px]"
+          drag={true}
           dragConstraints={{
             top: -50,
             left: 300,
             right: 300,
             bottom: 50,
           }}
-          className="absolute left-[410px] top-[190px]"
-        >
-          <Image
-            src={"/images/stickers/StickerOrange.png"}
-            width={224}
-            height={70}
-            alt="orange sticker"
-          />
-        </motion.div>
-        <motion.div
-          drag
+          src={"/images/stickers/StickerOrange.png"}
+          width={224}
+          height={70}
+          alt="orange sticker"
+        />
+        <Sticker
+          className="right-[870px] top-[460px]"
+          drag={true}
           dragConstraints={{
             top: -50,
             left: 300,
             right: 300,
             bottom: 50,
           }}
-          className="absolute right-[870px] top-[460px] z-30"
-        >
-          <Image
-            src={"/images/stickers/StickerYellow.png"}
-            width={137}
-            height={137}
-            alt="yellow sticker"
-          />
-        </motion.div>
-        <motion.div
-          drag
+          src={"/images/stickers/StickerYellow.png"}
+          width={137}
+          height={137}
+          alt="yellow sticker"
+        />
+        <Sticker
+          className="left-[580px] top-[610px]"
+          drag={true}
           dragConstraints={{
             top: -50,
             left: 300,
             right: 300,
             bottom: 50,
           }}
-          className="absolute left-[580px] top-[610px] z-30"
-        >
-          <Image
-            src={"/images/stickers/StickerRed.png"}
-            width={225}
-            height={69}
-            alt="red sticker"
-          />
-        </motion.div>
-        <motion.div
-          drag
+          src={"/images/stickers/StickerRed.png"}
+          width={225}
+          height={69}
+          alt="red sticker"
+        />
+        <Sticker
+          className="right-[340px] top-[600px]"
+          drag={true}
           dragConstraints={{
             top: -50,
             left: 300,
             right: 300,
             bottom: 50,
           }}
-          className="absolute right-[340px] top-[600px] z-30"
-        >
-          <Image
-            src={"/images/stickers/StickerPurple.png"}
-            width={230}
-            height={74}
-            alt="purple sticker"
-          />
-        </motion.div>
+          src={"/images/stickers/StickerPurple.png"}
+          width={230}
+          height={74}
+          alt="purple sticker"
+        />
       </div>
       <div className=" 2xl:mt-[50px] mt-[50%] h-screen w-full text-center md:mt-[35%] lg:mt-[5%]">
         <div className="headingPro text-[120px] leading-[110px] text-white  md:leading-[112px] lg:text-[340px] lg:leading-[280px]">
