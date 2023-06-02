@@ -1,6 +1,8 @@
 import Newsletter from "@/components/Newsletter";
+import Store from "@/components/Store";
 import EnglishSection from "@/sections/EnglishSection";
 import EventsSection from "@/sections/EventsSection";
+import GamingSection from "@/sections/GamingSection";
 // import GamingSection from "@/sections/GamingSection";
 import HeroSection from "@/sections/HeroSection";
 import { type NextPage } from "next";
@@ -18,8 +20,9 @@ const Home: NextPage = () => {
         <HeroSection />
         <EventsSection />
         <EnglishSection />
+        <GamingSection />
+        <Store />
         <Newsletter />
-        {/* <GamingSection /> */}
       </main>
     </>
   );
