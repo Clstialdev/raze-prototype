@@ -1,8 +1,97 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 const Store = () => {
   return (
     <>
-      <div className=" mt-[50%] h-screen w-screen text-center md:mt-[35%] lg:mt-[5%] 2xl:mt-[50px]">
+      {/* STICKERS  */}
+      <div className="relative inset-0 w-full">
+        <motion.div
+          drag
+          dragConstraints={{
+            top: -50,
+            left: 300,
+            right: 300,
+            bottom: 50,
+          }}
+          className="absolute right-[710px] top-[60px]"
+        >
+          <Image
+            src={"/images/stickers/StickerGreen.png"}
+            width={118}
+            height={118}
+            alt="green sticker"
+          />
+        </motion.div>
+        <motion.div
+          drag
+          dragConstraints={{
+            top: -50,
+            left: 300,
+            right: 300,
+            bottom: 50,
+          }}
+          className="absolute left-[410px] top-[190px]"
+        >
+          <Image
+            src={"/images/stickers/StickerOrange.png"}
+            width={224}
+            height={70}
+            alt="orange sticker"
+          />
+        </motion.div>
+        <motion.div
+          drag
+          dragConstraints={{
+            top: -50,
+            left: 300,
+            right: 300,
+            bottom: 50,
+          }}
+          className="absolute right-[870px] top-[460px] z-30"
+        >
+          <Image
+            src={"/images/stickers/StickerYellow.png"}
+            width={137}
+            height={137}
+            alt="yellow sticker"
+          />
+        </motion.div>
+        <motion.div
+          drag
+          dragConstraints={{
+            top: -50,
+            left: 300,
+            right: 300,
+            bottom: 50,
+          }}
+          className="absolute left-[580px] top-[610px] z-30"
+        >
+          <Image
+            src={"/images/stickers/StickerRed.png"}
+            width={225}
+            height={69}
+            alt="red sticker"
+          />
+        </motion.div>
+        <motion.div
+          drag
+          dragConstraints={{
+            top: -50,
+            left: 300,
+            right: 300,
+            bottom: 50,
+          }}
+          className="absolute right-[340px] top-[600px] z-30"
+        >
+          <Image
+            src={"/images/stickers/StickerPurple.png"}
+            width={230}
+            height={74}
+            alt="purple sticker"
+          />
+        </motion.div>
+      </div>
+      <div className=" 2xl:mt-[50px] mt-[50%] h-screen w-full text-center md:mt-[35%] lg:mt-[5%]">
         <div className="headingPro text-[120px] leading-[110px] text-white  md:leading-[112px] lg:text-[340px] lg:leading-[280px]">
           <h1>OUR</h1>
           <div className="relative">
@@ -14,53 +103,9 @@ const Store = () => {
         <div className="">
           <p className="inter mt-12 text-xs uppercase text-white opacity-30">
             More coming soon.... Subscribe to our{" "}
-            <span className=" text-[#96FC58] underline"> Newsletter</span> to get notified
-            of limited edition drops!
+            <span className=" text-[#96FC58] underline"> Newsletter</span> to
+            get notified of limited edition drops!
           </p>
-        </div>
-      </div>
-
-      {/* STICKERS  */}
-      <div className="">
-        <div className="absolute right-[30%] top-[10%]">
-          <Image
-            src={"/images/stickers/StickerGreen.png"}
-            width={118}
-            height={118}
-            alt=""
-          />
-        </div>
-        <div className="absolute left-[17%] top-[15%]">
-          <Image
-            src={"/images/stickers/StickerOrange.png"}
-            width={224}
-            height={70}
-            alt=""
-          />
-        </div>
-        <div className="absolute left-[50%] top-[50%]">
-          <Image
-            src={"/images/stickers/StickerYellow.png"}
-            width={137}
-            height={137}
-            alt=""
-          />
-        </div>
-        <div className="absolute bottom-[23%] left-[27%]">
-          <Image
-            src={"/images/stickers/StickerRed.png"}
-            width={225}
-            height={69}
-            alt=""
-          />
-        </div>
-        <div className="absolute bottom-[25%] right-[10%]">
-          <Image
-            src={"/images/stickers/StickerPurple.png"}
-            width={230}
-            height={74}
-            alt=""
-          />
         </div>
       </div>
     </>
