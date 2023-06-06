@@ -5,6 +5,7 @@ import EventsSection from "@/sections/EventsSection";
 import GamingSection from "@/sections/GamingSection";
 // import GamingSection from "@/sections/GamingSection";
 import HeroSection from "@/sections/HeroSection";
+import WomenEmporowement from "@/sections/WomenEmporowement";
 import { type NextPage } from "next";
 import Head from "next/head";
 
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <EventsSection />
         <EnglishSection />
         <GamingSection />
+        <WomenEmporowement />
         <Store />
         <Newsletter />
       </main>
