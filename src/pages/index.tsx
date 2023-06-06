@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import Store from "@/components/Store";
 import EnglishSection from "@/sections/EnglishSection";
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
         <WomenEmporowement />
         <Store />
         <Newsletter />
+        <Footer />
       </main>
     </>
   );
