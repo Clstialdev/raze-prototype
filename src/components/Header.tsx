@@ -16,10 +16,22 @@ const Header = () => {
         <div className="inter relative -ml-[calc(35px/2)] grid h-full w-full grid-cols-3  px-[10%] text-center text-sm font-semibold text-raze-beige lg:px-[5%]">
           {/* Desktop Nav */}
           <ul className="hidden w-full flex-row items-center justify-start gap-16 drop-shadow-[0_4px_16px_rgba(0,0,0,1)] lg:flex">
-            <li>SHOP</li>
-            <li>EVENTS</li>
-            <li>JOIN</li>
-            <li>ABOUT</li>
+            <li className="group flex duration-200 hover:cursor-pointer">
+              <span className="hidden group-hover:block">{"["}</span>SHOP
+              <span className="hidden group-hover:block">{"]"}</span>
+            </li>
+            <li className="group flex duration-200 hover:cursor-pointer">
+              <span className="hidden group-hover:block">{"["}</span>EVENTS
+              <span className="hidden group-hover:block">{"]"}</span>
+            </li>
+            <li className="group flex duration-200 hover:cursor-pointer">
+              <span className="hidden group-hover:block">{"["}</span>JOIN
+              <span className="hidden group-hover:block">{"]"}</span>
+            </li>
+            <li className="group flex duration-200 hover:cursor-pointer">
+              <span className="hidden group-hover:block">{"["}</span>ABOUT
+              <span className="hidden group-hover:block">{"]"}</span>
+            </li>
           </ul>
           {/* Raze Logo */}
           <div className="flex w-full items-center justify-start drop-shadow-[0_4px_16px_rgba(0,0,0,1)] lg:justify-center">

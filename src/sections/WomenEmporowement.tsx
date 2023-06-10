@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/utils/cn";
+import WomenTitle from "@/components/WomanTitle";
 
 const WomenEmporowement: NextPage = () => {
   const [viewportWidth, setViewportWidth] = useState(0);
@@ -54,6 +55,17 @@ const WomenEmporowement: NextPage = () => {
         <div className="absolute left-0 top-0 h-fit w-full">
           <PixelatedBorder viewportWidth={viewportWidth} />
         </div>
+      </div>
+      <WomenTitle />
+      {/* Description */}
+      <div className="absolute bottom-56 left-0 flex w-full justify-center sm:bottom-36">
+        <p className="inter mx-auto w-[95%] text-center text-xs font-medium uppercase text-white sm:text-sm">
+          We believe in supporting and uplifting each other to achieve our
+          dreams. From networking events to workshops, we provide a space where
+          you can grow personally and professionally. meet like-minded women,
+          share experiences, and inspire one another to reach new heights.
+          Let&apos;s break barriers and shatter glass ceilings together!
+        </p>
       </div>
     </div>
   );

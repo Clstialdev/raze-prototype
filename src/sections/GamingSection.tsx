@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
+import GamingTitle from "@/components/GamingTitle";
 
 const GamingSection: NextPage = () => {
   const [viewportWidth, setViewportWidth] = useState(0);
@@ -17,10 +18,7 @@ const GamingSection: NextPage = () => {
       const rect = section
         ? section.getBoundingClientRect()
         : { top: 0, bottom: 0 };
-      const isInView =
-        rect.top >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight);
+      const isInView = Math.abs(rect.top) <= 140;
       setInView(isInView);
     }
 
@@ -55,6 +53,8 @@ const GamingSection: NextPage = () => {
       // As soon as we're out of view, stop the game
       !inView && setInGame(false);
 
+      console.log("inview", inView);
+
       return () => {
         window.removeEventListener("resize", updateViewportDimensions);
         document.removeEventListener("keydown", handleKeyDown);
@@ -85,6 +85,44 @@ const GamingSection: NextPage = () => {
 
         {/* Icons */}
         {!inGame && <GamingIcons />}
+
+        {/* Title */}
+        {!inGame && (
+          <div className="z-20 flex h-screen w-full items-center justify-center">
+            <GamingTitle />
+            <div className="relative hidden sm:block">
+              <Image
+                src="/images/skull.png"
+                width={432}
+                height={454}
+                alt="gaming skull"
+              />
+              <div className="absolute -top-[55%] left-1/2 -ml-[5px] h-[250px] w-[7px] bg-raze-green"></div>
+            </div>
+          </div>
+        )}
+
+        {/* Press Space to Play */}
+        {!inGame && (
+          <div className="absolute left-0 top-0 hidden h-screen w-full items-center justify-center sm:flex">
+            <p className="pp z-20 mt-[420px] text-6xl font-normal text-raze-green">
+              Press Space to Play
+            </p>
+          </div>
+        )}
+
+        {/* Description */}
+        {!inGame && (
+          <div className="absolute bottom-20 left-0 flex justify-center sm:bottom-32">
+            <p className="inter w-[90%] text-center text-sm font-semibold uppercase text-white sm:text-base ">
+              Whether you&apos;re a seasoned pro or just starting out,
+              we&apos;ve got thrilling tournaments and events that will keep you
+              on the edge of your seat. From nail-biting e-sports competitions
+              to casual game nights with friends, our community is all about
+              having fun and connecting with like-minded gamers.
+            </p>
+          </div>
+        )}
 
         {/* Bottom Border */}
         <div className="absolute bottom-0 left-0 w-full">
@@ -137,6 +175,9 @@ const BrickBreaker: NextPage = () => {
           >
             <div className="absolute left-1/2 top-1/2 z-10  -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-9xl font-bold text-white">
               Game Over!
+              <p className="mt-4 text-center text-2xl">
+                Press Space to play again!
+              </p>
             </div>
           </div>
         </div>
@@ -195,7 +236,7 @@ const GamingIcons: NextPage = () => {
         src={"/images/gaming/arrow5.png"}
         width={81}
         height={82}
-        className="absolute left-[1.5%] top-[380px] "
+        className="absolute left-[1.5%] top-[380px] hidden sm:block"
         alt=""
       />
       <Image
@@ -209,7 +250,7 @@ const GamingIcons: NextPage = () => {
         src={"/images/gaming/textbubble.png"}
         width={76}
         height={82}
-        className="absolute bottom-[375px] left-[4%] "
+        className="absolute bottom-[375px] left-[4%] hidden sm:block"
         alt=""
       />
       <Image

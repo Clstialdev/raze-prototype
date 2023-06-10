@@ -66,10 +66,13 @@
 }
 .textShadow {
   color: #000000;
-
   text-shadow: 2px 2px 0 #c2c2c2, 2px -2px 0 #c2c2c2, -2px 2px 0 #c2c2c2,
     -2px -2px 0 #c2c2c2, 2px 0px 0 #c2c2c2, 0px 2px 0 #c2c2c2,
     -2px 0px 0 #c2c2c2, 0px -2px 0 #c2c2c2;
+}
+
+.textShadow:hover {
+  text-shadow: none;
 }
 
 .dashed-line {
@@ -91,4 +94,12 @@
   .text-stroke-english {
     -webkit-text-stroke-width: 3px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray; /* Color of the scrollbar thumb */
 }

@@ -23,11 +23,21 @@ const Sticker = ({
   return (
     <motion.div
       drag={drag}
+      dragTransition={{ bounceStiffness: 100, bounceDamping: 30 }}
+      whileDrag={{ scale: 1.02 }}
+      whileTap={{ boxShadow: "0px 0px 15px rgba(0,0,0,0.2)" }}
       dragConstraints={dragConstraints}
       className={cn("absolute z-30", className)}
       {...restProps}
     >
-      <Image src={src} width={width} height={height} alt={alt} />
+      <Image
+        src={src}
+        width={width}
+        height={height}
+        alt={alt}
+        className="select-none"
+        draggable={false}
+      />
     </motion.div>
   );
 };
