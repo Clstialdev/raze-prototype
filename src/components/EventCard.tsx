@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import Image from "next/image";
 import { useLayoutEffect, useRef } from "react";
 
@@ -35,7 +35,7 @@ const EventCard: NextPage<EventCardProps> = ({ ticket }) => {
 
   return (
     <>
-      <div className="inter flex scale-[0.9] flex-col items-center justify-center text-6xl font-extrabold uppercase sm:scale-100">
+      <div className="inter flex cursor-pointer flex-col items-center justify-center text-6xl font-extrabold uppercase duration-300 hover:-translate-y-[20px]">
         <div className="relative z-[10] flex h-[577px] w-[382px] flex-col items-center justify-center ">
           {/* Background */}
           <div className="absolute bottom-0 left-0 right-0 top-0 z-[-1] h-full w-full">
