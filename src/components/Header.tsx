@@ -25,19 +25,19 @@ const Header = () => {
                 <span className="hidden group-hover:block">{"]"}</span>
               </li>
             </Link>
-            <Link href="#events">
+            <Link href="#events" scroll={false}>
               <li className="group flex duration-200 hover:cursor-pointer">
                 <span className="hidden group-hover:block">{"["}</span>EVENTS
                 <span className="hidden group-hover:block">{"]"}</span>
               </li>
             </Link>
-            <Link href="#newsletter">
+            <Link href="#newsletter" scroll={false}>
               <li className="group flex duration-200 hover:cursor-pointer">
                 <span className="hidden group-hover:block">{"["}</span>JOIN
                 <span className="hidden group-hover:block">{"]"}</span>
               </li>
             </Link>
-            <Link href="#socials">
+            <Link href="#socials" scroll={false}>
               <li className="group flex duration-200 hover:cursor-pointer">
                 <span className="hidden group-hover:block">{"["}</span>SOCIALS
                 <span className="hidden group-hover:block">{"]"}</span>
@@ -78,7 +78,7 @@ const Header = () => {
           {/* Follow us */}
           <div className="hidden h-full w-full text-right drop-shadow-[0_4px_16px_rgba(0,0,0,1)] lg:flex lg:items-center lg:justify-end">
             <p>
-              FOLLOW US <span>@RAZE_SOCIETY</span>
+              JOIN IN... RAZE UP! <span></span>
             </p>
           </div>
         </div>

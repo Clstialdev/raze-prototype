@@ -2,14 +2,20 @@ const svgRoot = document.getElementById("svgRoot");
 const ball = document.getElementById("ball");
 const pad = document.getElementById("pad");
 const levelText = document.getElementById("levelText");
+const discountText = document.getElementById("discountText");
 const gameOverText = document.getElementById("game-over");
 YtextPosition = -svgRoot.clientHeight + 50;
+XtextPosition = svgRoot.clientWidth - 200;
 levelText.setAttribute("y", YtextPosition);
+discountText.setAttribute("y", YtextPosition);
+discountText.setAttribute("x", XtextPosition);
 
 let gameStarted = false;
 let brickPositions = [];
 let Walls = [];
 let level = 1;
+let discount = 0;
+let discountCode = "";
 let dx = 0; //Ball Speed
 let dy = 7; //Ball Speed
 let originalBallX = svgRoot.clientWidth / 2;
@@ -109,6 +115,7 @@ function generateBrickPositions(min, max) {
 
   //  set the level number in the svg text
   levelText.textContent = "Level " + level;
+  discountText.textContent = discount + "% Code: " + discountCode;
 }
 
 function generateWalls(numWalls, wallHeight) {
@@ -293,6 +300,51 @@ function nextLevel() {
   removeElementsByClass("brick");
   removeElementsByClass("wall");
   level += 1;
+  discount += 2;
+  switch (level) {
+    case 2:
+      discountCode = "DeuceJuice";
+      break;
+
+    case 3:
+      discountCode = "TinyTaters";
+      break;
+
+    case 4:
+      discountCode = "HalfDozen";
+      break;
+
+    case 5:
+      discountCode = "AlmostThere";
+      break;
+
+    case 6:
+      discountCode = "ADime";
+      break;
+
+    case 7:
+      discountCode = "SillyTwelve";
+      break;
+
+    case 8:
+      discountCode = "4Teens1Question";
+      break;
+
+    case 9:
+      discountCode = "LegalToDrive";
+      break;
+
+    case 10:
+      discountCode = "FullyLegal;)";
+      break;
+
+    case 11:
+      discountCode = "TwentyShadesOfDiscount";
+      break;
+
+    default:
+      break;
+  }
   generateBrickPositions(20, 50);
   Walls = [];
   generateWalls(5, 20);
@@ -327,7 +379,7 @@ document.addEventListener("touchmove", (event) => {
   // Update the element's position based on the touch movement
   updatePaddlePosition(currentX - startPosition.x - offset.x + 150 / 2);
 
-  event.preventDefault();
+  // event.preventDefault();
 });
 
 document.addEventListener("touchend", () => {

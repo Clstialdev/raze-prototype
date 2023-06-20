@@ -21,10 +21,10 @@ const Footer = () => {
           <Link href="#">
             <p className="font-bold">Facebook</p>
           </Link>
-          <Link href="#">
+          <Link href="https://twitter.com/RazeSociety">
             <p className="font-bold">Twitter</p>
           </Link>
-          <Link href="#">
+          <Link href="https://www.instagram.com/raze.society/">
             <p className="font-bold">Instagram</p>
           </Link>
           <Link href="#">

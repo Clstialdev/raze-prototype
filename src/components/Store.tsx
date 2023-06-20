@@ -31,8 +31,11 @@ const Store = () => {
         <div className="absolute bottom-10 left-0 flex w-full justify-center">
           <p className="inter mt-12 w-full text-center text-xs font-bold uppercase text-white opacity-30">
             More coming soon.... Subscribe to our{" "}
-            <Link href="#newsletter">
-              <span className=" text-[#96FC58] underline"> Newsletter</span>
+            <Link href="#newsletter" scroll={false}>
+              <span className=" text-[#96FC58] hover:underline">
+                {" "}
+                Newsletter
+              </span>
             </Link>{" "}
             to get notified of limited edition drops!
           </p>

@@ -177,19 +177,30 @@ const BrickBreaker: NextPage = () => {
             />
             <text
               id="levelText"
-              x="100"
+              x="50"
               fill="white"
               fontSize="24"
               transform="scale(1,-1)"
+              className="text-xl sm:text-2xl"
             >
               Level 1
+            </text>
+            <text
+              id="discountText"
+              x="0"
+              fill="white"
+              fontSize="24"
+              transform="scale(1,-1)"
+              className="text-right text-xl sm:text-2xl"
+            >
+              0% Discount
             </text>
           </svg>
           <div
             className="absolute ml-2 hidden h-full w-[calc(100%-20px)] backdrop-blur-sm"
             id="game-over"
           >
-            <div className="absolute left-1/2 top-1/2 z-10  -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-9xl font-bold text-white">
+            <div className="absolute left-1/2 top-1/2 z-10  -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-6xl font-bold text-white sm:text-9xl">
               Game Over!
               <p className="mt-4 text-center text-2xl">
                 Press Space to play again!

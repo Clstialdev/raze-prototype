@@ -58,9 +58,9 @@ const EventsSection: NextPage = () => {
           Events Coming soon
         </h1>
       </div>
-      <div className="inter text-xs font-bold uppercase text-white text-opacity-[35%]">
+      <div className="inter z-40 text-xs font-bold uppercase text-white text-opacity-[35%]">
         dates, rates and tickets may change, Subscribe to our{" "}
-        <Link href="#newsletter">
+        <Link href="#newsletter" scroll={false}>
           <span className="text-[#FC5858] text-opacity-[35%] duration-200 hover:cursor-pointer hover:underline">
             Newsletter
           </span>
