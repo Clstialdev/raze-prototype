@@ -96,7 +96,7 @@ const GamingSection: NextPage = () => {
             <GamingTitle />
             <div className="relative hidden sm:block">
               <Image
-                src="/images/skull.png"
+                src="/images/Skull.png"
                 width={432}
                 height={454}
                 alt="gaming skull"
