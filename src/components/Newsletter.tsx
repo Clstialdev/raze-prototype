@@ -40,7 +40,7 @@ const Newsletter = () => {
               <p className="mb-1 ml-2 font-bold">Email</p>
               <input
                 placeholder="johndoe@raze-society.com"
-                className=" ml-2 border-0 bg-transparent placeholder:text-black placeholder:text-opacity-60"
+                className=" ml-2 border-0 bg-transparent outline-none placeholder:text-black placeholder:text-opacity-60"
                 id="email"
                 type="email"
               />

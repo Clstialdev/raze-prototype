@@ -2,13 +2,17 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import Store from "@/components/Store";
 import EnglishSection from "@/sections/EnglishSection";
-import EventsSection from "@/sections/EventsSection";
 import GamingSection from "@/sections/GamingSection";
 // import GamingSection from "@/sections/GamingSection";
 import HeroSection from "@/sections/HeroSection";
 import WomenEmporowement from "@/sections/WomenEmporowement";
 import { type NextPage } from "next";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+
+const DynamicEventsSection = dynamic(() => import("@/sections/EventsSection"), {
+  ssr: false,
+});
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +24,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center overflow-x-hidden bg-black">
         <HeroSection />
-        <EventsSection />
+        <DynamicEventsSection />
         <EnglishSection />
         <GamingSection />
         <WomenEmporowement />

@@ -173,6 +173,8 @@ function gameOver(dy) {
   pad.setAttribute("x", originalPadX);
   Walls = [];
   brickPositions = [];
+  dx = 0;
+  dy = 7;
 
   // alert("Game Over!");
   // document.location.reload();
@@ -288,10 +290,13 @@ function keepBallMoving() {
 
 function nextLevel() {
   //   gameStarted = false;
+  removeElementsByClass("brick");
+  removeElementsByClass("wall");
   level += 1;
   generateBrickPositions(20, 50);
   Walls = [];
   generateWalls(5, 20);
+
   //   pad.setAttribute("x", "100");
   //   pad.setAttribute("y", "0");
   //   ball.setAttribute("cx", originalBallX);
@@ -303,6 +308,32 @@ document.addEventListener("mousemove", (event) => {
   updatePaddlePosition(mouseX - 150 / 2); // we subtract half of the paddleWidth
 });
 
+let isDragging = false;
+let startPosition = { x: 0, y: 0 };
+let offset = { x: 0, y: 0 };
+
+document.addEventListener("touchstart", (event) => {
+  const touch = event.touches[0];
+  startPosition = { x: touch.clientX, y: touch.clientY };
+  isDragging = true;
+});
+
+document.addEventListener("touchmove", (event) => {
+  if (!isDragging) return;
+
+  const touch = event.touches[0];
+  const currentX = touch.clientX;
+
+  // Update the element's position based on the touch movement
+  updatePaddlePosition(currentX - startPosition.x - offset.x + 150 / 2);
+
+  event.preventDefault();
+});
+
+document.addEventListener("touchend", () => {
+  isDragging = false;
+});
+
 document.addEventListener("keydown", (event) => {
   if (event.code === "Space") {
     if (!gameStarted) {
@@ -310,6 +341,16 @@ document.addEventListener("keydown", (event) => {
     }
   }
 });
+
+const taptoplay = document.getElementById("taptoplay");
+
+if (taptoplay) {
+  taptoplay.addEventListener("click", () => {
+    if (!gameStarted) {
+      startGame();
+    }
+  });
+}
 
 // Start the game loop
 keepBallMoving();

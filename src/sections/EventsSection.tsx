@@ -32,7 +32,10 @@ const Events: Array<EventCard> = [
 
 const EventsSection: NextPage = () => {
   return (
-    <div className="relative flex min-h-screen w-full flex-col items-center justify-around bg-[#121211] py-20 md:py-0">
+    <div
+      className="relative flex min-h-screen w-full flex-col items-center justify-around bg-[#121211] py-20 md:py-0"
+      id="events"
+    >
       {/* Background */}
       <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full">
         <Image
@@ -48,11 +51,11 @@ const EventsSection: NextPage = () => {
           Events
         </h1>
       </div>
-      <div className="grid grid-cols-3 gap-[35px]">
-        <EventCard ticket={Events[0] as EventCard} />
-        <EventCard ticket={Events[1] as EventCard} />
+      <div className="grid grid-cols-1 items-center justify-center gap-[35px]">
+        {/* <EventCard ticket={Events[0] as EventCard} /> */}
+        {/* <EventCard ticket={Events[1] as EventCard} /> */}
         <h1 className="inter my-auto text-center text-3xl font-bold uppercase text-white">
-          MORE COMING SOON
+          Events Coming soon
         </h1>
       </div>
       <div className="inter text-xs font-bold uppercase text-white text-opacity-[35%]">

@@ -63,7 +63,11 @@ const GamingSection: NextPage = () => {
   }, [inView]);
 
   return (
-    <div className="relative h-screen w-full bg-[#0D0D0D]" ref={sectionRef}>
+    <div
+      className="relative h-screen w-full bg-[#0D0D0D]"
+      ref={sectionRef}
+      id="taptoplay"
+    >
       {/* Background */}
       <div className="absolute left-0 top-0 h-full w-full">
         {/* Top Border */}
@@ -107,6 +111,18 @@ const GamingSection: NextPage = () => {
           <div className="absolute left-0 top-0 hidden h-screen w-full items-center justify-center sm:flex">
             <p className="pp z-20 mt-[420px] text-6xl font-normal text-raze-green">
               Press Space to Play
+            </p>
+          </div>
+        )}
+
+        {/* Press Space to Play */}
+        {!inGame && (
+          <div
+            className="absolute left-0 top-0 flex h-screen w-full items-center justify-center sm:hidden"
+            onClick={() => setInGame(true)}
+          >
+            <p className="pp z-20 mt-[180px] text-3xl font-normal text-raze-green sm:mt-[420px] md:text-6xl">
+              Tap Here to Play
             </p>
           </div>
         )}

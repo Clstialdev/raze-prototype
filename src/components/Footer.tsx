@@ -1,7 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-center text-amber-400">
+    <div
+      className="flex w-full flex-col items-center justify-center text-amber-400"
+      id="socials"
+    >
       <div className="flex h-96 w-full flex-col justify-around p-4 sm:h-72 sm:flex-row sm:items-center sm:p-0">
         <div className="pp flex flex-col gap-2">
           {/* <Image width={90} height={26} src={"/images/LogoLime.png"} alt={""} /> */}
@@ -14,10 +18,18 @@ const Footer = () => {
           <p>me@raze.com</p>
         </div>
         <div className="inter flex flex-col items-start justify-start tracking-wider">
-          <div className="font-bold">Facebook</div>
-          <div className="font-bold">Twitter</div>
-          <div className="font-bold">Instagram</div>
-          <div className="font-bold">Tiktok</div>
+          <Link href="#">
+            <p className="font-bold">Facebook</p>
+          </Link>
+          <Link href="#">
+            <p className="font-bold">Twitter</p>
+          </Link>
+          <Link href="#">
+            <p className="font-bold">Instagram</p>
+          </Link>
+          <Link href="#">
+            <p className="font-bold">Tiktok</p>
+          </Link>
         </div>
       </div>
       <div className="w-full bg-amber-500 py-2 text-center font-mono font-bold text-black">
